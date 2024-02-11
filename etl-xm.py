@@ -3,6 +3,7 @@ import requests
 import csv
 from datetime import datetime, timedelta
 import time
+import pandas as pd
 
 def descargar_archivo(url, nombre_archivo, intentos=5):
     for i in range(intentos):
@@ -63,3 +64,7 @@ with open(archivo_salida2, 'r') as csv_file:
             fecha_actual += timedelta(days=1)
 
 os.remove(archivo_salida2)
+
+# Lectura de archivo csv
+df = pd.read_csv(archivo_salida)
+print(df)
