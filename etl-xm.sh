@@ -23,7 +23,6 @@ rm -rf url_para_descargar.txt
 # Nombre del archivo CSV de entrada
 
 archivo_fuente="pronostico_demanda/PRONSIN$month$day.csv"
-#archivo_fuente="pronostico_demanda/hola.csv"
 
 # Nombre del archivo CSV de salida
 archivo_salida2="pronostico_demanda/T2PRONSIN$month$day.csv"
